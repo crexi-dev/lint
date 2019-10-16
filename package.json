@@ -1,0 +1,19 @@
+{
+  "name": "@crexi-dev/lint",
+  "version": "1.0.2",
+  "description": "ts lint rules for crexi",
+  "main": "tslint.json",
+  "scripts": {
+    "build": "tsc --outDir ./dist/lint",
+    "postbuild": "npx copy {package,tslint}.json ./dist/lint/.",
+    "clean": "rimraf ./dist/lint",
+    "dist": "npm run clean && npm run build",
+    "test": "exit"
+  },
+  "author": "Neil Soult",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "typescript": "~3.4.5"
+  }
+}
