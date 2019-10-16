@@ -4,9 +4,9 @@
   "description": "ts lint rules for crexi",
   "main": "tslint.json",
   "scripts": {
-    "build": "tsc --outDir ./dist",
-    "postbuild": "npx copy {package,tslint}.json ./dist/.",
-    "clean": "rimraf ./dist",
+    "build": "tsc --outDir ./dist/lint",
+    "postbuild": "npx copy {package,tslint}.json ./dist/lint/.",
+    "clean": "rimraf ./dist/lint",
     "dist": "npm run clean && npm run build",
     "test": "exit"
   },
